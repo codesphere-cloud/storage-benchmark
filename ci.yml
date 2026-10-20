@@ -1,0 +1,10 @@
+schemaVersion: v0.2
+prepare:
+  steps:
+    - name: verify benchmark tools
+      command: check-storage-benchmark-tools
+    - name: benchmark workspace storage
+      command: ./benchmark.sh
+test:
+  steps: []
+run: {}
